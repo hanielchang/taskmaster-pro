@@ -47,7 +47,7 @@ var saveTasks = function () {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
-//  Task item was clicked
+//  Task item was clicked-----------------
 $(".list-group").on("click", "p", function () {
   var text = $(this)
     .text()
@@ -59,7 +59,7 @@ $(".list-group").on("click", "p", function () {
   textInput.trigger("focus");
 });
 
-// Task item adjusted
+// Task item was adjusted----------------
 $(".list-group").on("blur", "textarea", function () {
   // get the textarea's current value/text
   var text = $(this)
@@ -89,7 +89,7 @@ $(".list-group").on("blur", "textarea", function () {
   $(this).replaceWith(taskP);
 });
 
-// due date was clicked
+// due date was clicked-----------------
 $(".list-group").on("click", "span", function() {
   // get current text
   var date = $(this)
@@ -109,7 +109,7 @@ $(".list-group").on("click", "span", function() {
   dateInput.trigger("focus");
 });
 
-// due date was adjusted
+// due date was adjusted----------------
 $(".list-group").on("blur", "input[type='text']", function() {
   // get current text
   var date = $(this)
